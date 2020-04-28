@@ -6,6 +6,17 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/textViewSemester"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Semester"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKursAnzahl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewModul"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textViewModul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,17 +30,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewSemester"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Semester"
-        app:layout_constraintBottom_toTopOf="@+id/textViewKursAnzahl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewModul"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textViewKursAnzahl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -38,4 +38,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textViewSemester"
         app:layout_constraintTop_toBottomOf="@+id/textViewSemester" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
