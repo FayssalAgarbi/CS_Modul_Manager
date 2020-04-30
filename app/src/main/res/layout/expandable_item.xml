@@ -38,12 +38,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/modulTextView">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/hcProfessorTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="42dp" />
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Professor "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hcAnzahlDerModuleTextView" />
 
                 <TextView
                     android:id="@+id/hcAnzahlDerModuleTextView"
@@ -64,6 +66,16 @@
                     android:text="7 / 14"
                     app:layout_constraintStart_toEndOf="@+id/hcAnzahlDerModuleTextView"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Sebastian Bab"
+                    app:layout_constraintStart_toEndOf="@+id/hcProfessorTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/AnazhlModuleTextView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
