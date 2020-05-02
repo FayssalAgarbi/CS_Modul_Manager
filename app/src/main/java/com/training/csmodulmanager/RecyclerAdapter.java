@@ -22,15 +22,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ModulH
     @Override
     public ModulHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.modul_item, parent, false);
+        View view = layoutInflater.inflate(R.layout.expandable_item, parent, false);
         ModulHolder modulHolder = new ModulHolder(view);
         return modulHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ModulHolder holder, int position) {
-        holder.textViewKursAnzahl.setText(String.valueOf(position));
-        holder.textViewModul.setText(modules.get(position));
+        holder.AnzahlModuleTextView.setText(String.valueOf(position));
+        holder.modulTextView.setText(modules.get(position));
+       // holder.ProfessorTextView.setText("Sebastian Bab");
     }
 
     @Override
@@ -40,14 +41,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ModulH
 
     class ModulHolder extends RecyclerView.ViewHolder{
 
-        TextView textViewModul, textViewSemester, textViewKursAnzahl;
+        TextView modulTextView, ProfessorTextView, AnzahlModuleTextView;
 
         public ModulHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewModul = itemView.findViewById(R.id.textViewModul);
-            textViewSemester = itemView.findViewById(R.id.textViewSemester);
-            textViewKursAnzahl = itemView.findViewById(R.id.textViewKursAnzahl);
+            modulTextView = itemView.findViewById(R.id.modulTextView);
+            ProfessorTextView = itemView.findViewById(R.id.ProfessorTextView);
+            AnzahlModuleTextView = itemView.findViewById(R.id.AnzahlModuleTextView);
 
         }
     }

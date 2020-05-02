@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(recyclerAdapter);
 
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
-        recyclerView.addItemDecoration(dividerItemDecoration);
+        //DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+       // recyclerView.addItemDecoration(dividerItemDecoration);
 
 
         modules.add("Lineare Algebra");
